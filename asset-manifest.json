@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/React_And_ReduxToolkit_template_On/static/css/main.5aa23063.css",
+    "main.js": "/React_And_ReduxToolkit_template_On/static/js/main.3fe0974c.js",
+    "static/media/image-background-tablet-landing.jpg": "/React_And_ReduxToolkit_template_On/static/media/image-background-tablet-landing.13f7f18f9ae7b105ca12.jpg",
+    "static/media/image-hero1.jpg": "/React_And_ReduxToolkit_template_On/static/media/image-hero1.d200a3583e72c7981f46.jpg",
+    "static/media/image-hero.jpg": "/React_And_ReduxToolkit_template_On/static/media/image-hero.55c18e980adf7658ae26.jpg",
+    "index.html": "/React_And_ReduxToolkit_template_On/index.html",
+    "main.5aa23063.css.map": "/React_And_ReduxToolkit_template_On/static/css/main.5aa23063.css.map",
+    "main.3fe0974c.js.map": "/React_And_ReduxToolkit_template_On/static/js/main.3fe0974c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5aa23063.css",
+    "static/js/main.3fe0974c.js"
+  ]
+}
