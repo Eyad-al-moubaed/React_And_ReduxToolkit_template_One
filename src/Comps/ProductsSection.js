@@ -12,9 +12,9 @@ function ProductsSection(props) {
 return (
         <div className="ProductsSection">
             <div className='container'>
-            <ProductOne image='/images/image-headphones.png' title='Headphone' path='/headphones'/>
-            <ProductOne image='/images/image-speakers.png' title='speakers' path='/speakers'/>
-            <ProductOne image='/images/image-earphones.png' title='earphones' path='/earphones'/>
+            <ProductOne image='./images/image-headphones.png' title='Headphone' path='/headphones'/>
+            <ProductOne image='./images/image-speakers.png' title='speakers' path='/speakers'/>
+            <ProductOne image='./images/image-earphones.png' title='earphones' path='/earphones'/>
             </div>
         </div>
     );

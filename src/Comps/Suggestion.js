@@ -15,21 +15,21 @@ setAllow(true)
 }
     if(width<767 && width>480 ){
       setAllow(false)
-      if(localStorage.includes("/images/image-xx99-mark-one.jpg"))  {
-            setLocalStorage("/images/image-xx99-mark-one-youMayAlso.jpg")
+      if(localStorage.includes("./images/image-xx99-mark-one.jpg"))  {
+            setLocalStorage("./images/image-xx99-mark-one-youMayAlso.jpg")
           }
-          if(localStorage.includes("/images/image-zx7.jpg")){
+          if(localStorage.includes("./images/image-zx7.jpg")){
               // console.log("hellloo")
-              setLocalStorage("/images/image-zx7-speakerYouMayAlso.jpg")
+              setLocalStorage("./images/image-zx7-speakerYouMayAlso.jpg")
               }
-              if(localStorage.includes("/images/image-zx9.jpg"))  {
-                setLocalStorage("/images/image-zx9-speakerYouMayAlso.jpg")
+              if(localStorage.includes("./images/image-zx9.jpg"))  {
+                setLocalStorage("./images/image-zx9-speakerYouMayAlso.jpg")
                 }
-                if(localStorage.includes("/images/image-xx59.jpg"))  {
-                  setLocalStorage("/images/image-xx59-headphonesYouMayAlso.jpg")
+                if(localStorage.includes("./images/image-xx59.jpg"))  {
+                  setLocalStorage("./images/image-xx59-headphonesYouMayAlso.jpg")
                 }
-                if(localStorage.includes("/images/image-xx99-mark-two.jpg")){
-                  setLocalStorage("/images/image-xx99-mark-two-headphonesYoumayAlso.jpg")
+                if(localStorage.includes("./images/image-xx99-mark-two.jpg")){
+                  setLocalStorage("./images/image-xx99-mark-two-headphonesYoumayAlso.jpg")
                 }
                 }
                 // console.log(localStorage)

@@ -345,7 +345,6 @@ if(email!=""  && zip==null && phone==true && country==true  && adress==true && c
     <Link to="/" >Go back</Link>
       </div>
 <div className='localcontainer'>
-
 <div className='information'>
   <h1>CHECKOUT</h1>
 <div className='section'>
@@ -360,7 +359,7 @@ if(email!=""  && zip==null && phone==true && country==true  && adress==true && c
     <span className={name?"label":"warningName"}>Name</span><span className='warning'>{
     name?"":"Field cannot be empty"}</span>
       </div>
-<input type='text' placeholder='Eyad al mobaed' className={name?'':"warningg"}
+<input type='text' placeholder='your Name' className={name?'':"warningg"}
   onChange={(e)=>{
   // setName(e.target.value)
   setNamee(e.target.value)
