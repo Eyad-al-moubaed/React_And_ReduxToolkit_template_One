@@ -52,7 +52,8 @@ useEffect(()=>{
 },[Checkoutt])
 // console.log(Checkoutt);
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <>
     <ScrollToTop/>
     <CheckPath/>
     <div className="App">
@@ -95,9 +96,9 @@ useEffect(()=>{
 
 </div>
 
+</>
 
-
-    </BrowserRouter>
+    // </BrowserRouter>
     
   );
 }
