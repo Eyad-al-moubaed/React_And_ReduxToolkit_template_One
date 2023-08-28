@@ -162,13 +162,7 @@ function E_money(ele){
         }
       }
     }
-    
-
-
-  }  
-  
-  
-  
+  }    
 function ChangePin(ele){
 
 
@@ -185,9 +179,7 @@ function ChangePin(ele){
             Setpin(null)
           }
           }
-      }
-    
-    
+      }    
 }
 useEffect(()=>{
   if(Allow==true){
@@ -310,23 +302,29 @@ e.target.classList.remove("preventClicking")
  if(Allow==true){// hide cache and show e-money
 if(email!="" &&  Emoney==null && pin==null  && zip==null && phone==true && country==true  && adress==true && city==true && pass==null  && name==true){
   if(pricee!=0){
-    dispatch(TitleArray(`You paid ${grandTotal} successfully`));
+    dispatch(TitleArray(`You paid ${Number(vat + pricee + fifty).toLocaleString()} successfully`));
      dispatch(ZeroCounter(0));
      setVat(0)
      setfifthy(0)
     setGrandTotal(0)
   }
 }
+else{
+  window.scrollTo(0, 0)
+}
  }
 else if(Allow==false){
 if(email!=""  && zip==null && phone==true && country==true  && adress==true && city==true && pass==null  && name==true){
   if(pricee!=0){
-    dispatch(TitleArray(`You paid ${grandTotal} successfully`));
+    dispatch(TitleArray(`You paid ${Number(vat + pricee + fifty).toLocaleString()} successfully`));
      dispatch(ZeroCounter(0));
      setVat(0)
      setfifthy(0)
     setGrandTotal(0)
   }
+}
+else{
+  window.scrollTo(0, 0)
 }
 }
 //  }
@@ -414,7 +412,7 @@ zip? "wrong Format": zip == null ?"":"Field cannot be empty"
     SetZIP(true)
   }
   setZipValue(e.target.value)
-  console.log(zip)
+  // console.log(zip)
   ZipCode(e)}}/>
   </div>
   <div className='input'>
@@ -440,11 +438,9 @@ zip? "wrong Format": zip == null ?"":"Field cannot be empty"
   </div>
 </div>
 </div>
-
 <p className='secondTitle'>PAYMENT DETAILS</p>
 <div className='section'>
 <div className='payment'>Payment Method</div>
-
 <form action="">
 <div onClick={()=>{setAllow(true)}} >
   <input  checked={true} ref={ref} type="radio" id="method1" name="payMethod" value="e-money" onChange={()=>{}} />
@@ -528,7 +524,7 @@ pin? "wrong Format": pin == null ?"":"Field cannot be empty"
 <span className='string'>GRAND TOTAL</span>
 <span className='total_orange'>$ {Number(vat + pricee + fifty).toLocaleString()} </span>
 </div>
-<input type='submit' value="PAY"  className='CheckoutFinal'onClick={active}/> 
+<input type='submit'  value="PAY"  className='CheckoutFinal'onClick={active}/> 
   </div> 
 </div>
 </div>

@@ -128,7 +128,6 @@ margin: 0 auto;
 }
 .text1 .desc{
  width: 330px;   
-
 }
 .image{
    height: 400px;
@@ -159,6 +158,9 @@ margin: 0 auto;
         
         margin: 0 auto;
      }
+     .text1 .desc{
+        width: 330px;   
+       }
 }
 @media (max-width:991px) and (min-width:500px){
  .ProductBox .container{

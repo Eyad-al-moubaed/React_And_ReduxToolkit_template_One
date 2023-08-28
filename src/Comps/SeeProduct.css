@@ -205,12 +205,11 @@ transition: 1s;
     .SeeProduct .container .product-text{
         margin: 0 auto;
     }
-    
     .product-text .desc{
-        width: 400px;
+        width: 380px;
     }
-    
 }
+
 @media (max-width:991px) and (min-width:550px){
     .SeeProduct .container{
         flex-wrap: wrap;

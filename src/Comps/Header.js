@@ -36,7 +36,7 @@ function Header(props) {
         }
       },[width,show])
       useEffect(()=>{
-        console.log(Al)
+        // console.log(Al)
         if((Al==true)){
           if(!document.body.classList.contains("over")){
           document.body.classList.add("over")
@@ -55,10 +55,7 @@ function Header(props) {
           setEmpty(true);
         }
     },[counter])  
-    
     // console.log("GlobalClick",GlobalClick);
-
-
 useEffect(()=>{
   if(ListShow==true){
 setClick(false)

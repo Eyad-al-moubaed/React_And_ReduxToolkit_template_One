@@ -18,7 +18,7 @@ let hand = ()=>{
   setAlo(false);
 }
   return (
-    <div className={Alo?'Message':"hidden"} id={id}>
+    <div className={'Message'} id={id}>
 <CheckCircleIcon className='check'/>
 <div className='paragraph'>
  {title} 

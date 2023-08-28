@@ -18,10 +18,17 @@ font-family: 'Manrope',sans-serif;
         height: 50px;
         font-size: 15px;
         margin-right: 10px;
+        /* padding: 5px; */
+    }
+}
+@media(max-width:480px) and (min-width:378px){
+    .Message{
+    height: 50px;
+    font-size: 15px;
     }
 }
 .paragraph{
-margin-left: 10px;
+    margin-left: 10px;
 margin-right: 10px;
 }
 .hidden{
