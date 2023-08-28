@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React_And_ReduxToolkit_template_One/static/css/main.13269e69.css",
-    "main.js": "/React_And_ReduxToolkit_template_One/static/js/main.fa99ae8e.js",
+    "main.css": "/React_And_ReduxToolkit_template_One/static/css/main.51154863.css",
+    "main.js": "/React_And_ReduxToolkit_template_One/static/js/main.17ebc1af.js",
     "static/media/image-background-tablet-landing.jpg": "/React_And_ReduxToolkit_template_One/static/media/image-background-tablet-landing.13f7f18f9ae7b105ca12.jpg",
     "static/media/image-hero1.jpg": "/React_And_ReduxToolkit_template_One/static/media/image-hero1.d200a3583e72c7981f46.jpg",
     "static/media/image-hero.jpg": "/React_And_ReduxToolkit_template_One/static/media/image-hero.55c18e980adf7658ae26.jpg",
     "index.html": "/React_And_ReduxToolkit_template_One/index.html",
-    "main.13269e69.css.map": "/React_And_ReduxToolkit_template_One/static/css/main.13269e69.css.map",
-    "main.fa99ae8e.js.map": "/React_And_ReduxToolkit_template_One/static/js/main.fa99ae8e.js.map"
+    "main.51154863.css.map": "/React_And_ReduxToolkit_template_One/static/css/main.51154863.css.map",
+    "main.17ebc1af.js.map": "/React_And_ReduxToolkit_template_One/static/js/main.17ebc1af.js.map"
   },
   "entrypoints": [
-    "static/css/main.13269e69.css",
-    "static/js/main.fa99ae8e.js"
+    "static/css/main.51154863.css",
+    "static/js/main.17ebc1af.js"
   ]
 }
