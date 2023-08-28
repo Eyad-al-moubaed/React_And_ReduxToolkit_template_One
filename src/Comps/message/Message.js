@@ -11,13 +11,13 @@ function Message({title,id}) {
   // let {randomID}=useSelector(state =>state.container);
 
 setTimeout(()=>{
-setAlo(false);
+setAlo(false); 
 },5000)
 let hand = ()=>{
   setAlo(false);
 }
   return (
-    <div className={'Message'} id={id}>
+    <div className={Alo?'Message':"hidden"} id={id}>
 <CheckCircleIcon className='check'/>
 <div className='paragraph'>
  {title} 
