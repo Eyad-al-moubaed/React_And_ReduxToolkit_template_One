@@ -12,7 +12,6 @@ function Message({title,id}) {
 
 setTimeout(()=>{
 setAlo(false);
-
 },5000)
 let hand = ()=>{
   setAlo(false);
