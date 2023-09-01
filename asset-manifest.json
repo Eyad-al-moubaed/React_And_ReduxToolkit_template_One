@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/React_And_ReduxToolkit_template_One/static/css/main.5ea66515.css",
-    "main.js": "/React_And_ReduxToolkit_template_One/static/js/main.d4eeee7a.js",
+    "main.js": "/React_And_ReduxToolkit_template_One/static/js/main.343f611b.js",
     "static/media/image-background-tablet-landing.jpg": "/React_And_ReduxToolkit_template_One/static/media/image-background-tablet-landing.13f7f18f9ae7b105ca12.jpg",
     "static/media/image-hero1.jpg": "/React_And_ReduxToolkit_template_One/static/media/image-hero1.d200a3583e72c7981f46.jpg",
     "static/media/image-hero.jpg": "/React_And_ReduxToolkit_template_One/static/media/image-hero.55c18e980adf7658ae26.jpg",
     "index.html": "/React_And_ReduxToolkit_template_One/index.html",
     "main.5ea66515.css.map": "/React_And_ReduxToolkit_template_One/static/css/main.5ea66515.css.map",
-    "main.d4eeee7a.js.map": "/React_And_ReduxToolkit_template_One/static/js/main.d4eeee7a.js.map"
+    "main.343f611b.js.map": "/React_And_ReduxToolkit_template_One/static/js/main.343f611b.js.map"
   },
   "entrypoints": [
     "static/css/main.5ea66515.css",
-    "static/js/main.d4eeee7a.js"
+    "static/js/main.343f611b.js"
   ]
 }
