@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./Pop.css"
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
 import { useDispatch, useSelector } from 'react-redux'
-import { PopShow } from '../../redux/Slice';
+import { ChangeRemove, PopShow } from '../../redux/Slice';
 
 export default function Pop() {
   let dispatch = useDispatch()

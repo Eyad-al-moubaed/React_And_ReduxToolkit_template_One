@@ -18,7 +18,8 @@ detailsBtn:true,
 title:null,
 titleArray:[],
 Checkoutt:null,
-conn:0
+conn:0,
+removeValue:null
 // GlobalClick:true,
     },
     reducers:{
@@ -98,8 +99,11 @@ ele.num = action.payload.localNumber
 },
 ConChange:(state,action)=>{
 state.conn =  state.conn + action.payload
+},
+ChangeRemove:(state,action)=>{
+state.removeValue = action.payload
 }
     }
 })
-export const {PopShow,ConChange,TitleArray,Con,CheckoutChange,Click,Title,list,ShowPopfull,ZeroCounter,ChangeBtn ,IDNumber,total ,Counter ,ID ,CounterMins,FinalTotal,LastFinalTotal,Information,IdArrayPush,DetailsCounter,IDDD} = Slice.actions;
+export const {PopShow,ChangeRemove,ConChange,TitleArray,Con,CheckoutChange,Click,Title,list,ShowPopfull,ZeroCounter,ChangeBtn ,IDNumber,total ,Counter ,ID ,CounterMins,FinalTotal,LastFinalTotal,Information,IdArrayPush,DetailsCounter,IDDD} = Slice.actions;
 export default Slice.reducer;

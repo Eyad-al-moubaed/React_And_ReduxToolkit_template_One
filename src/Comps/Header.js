@@ -10,7 +10,7 @@ import { Click, list, PopShow,ShowPopfull} from '../redux/Slice';
 import { Send } from '@mui/icons-material';
 function Header(props) {
   let location = useLocation()
-  let {ListShow,showPopfull,show,counter,GlobalClick} = useSelector(state => state.container);
+  let {ListShow,showPopfull,show,counter,GlobalClick,removeValue} = useSelector(state => state.container);
   let [send,setSend] = useState(false);
   let [send2,setSend2] = useState(false);
   let dispatch = useDispatch()
@@ -19,6 +19,7 @@ function Header(props) {
   let [Allow,setAllow]=useState(null)
   let [va,setVa]=useState(false)
   let [Al,setAl]=useState(null)
+  let [localRemove,setLocalRemove] = useState(removeValue)
   function handleResize() {
     setWidth(window.innerWidth)
     // console.log("scrollC",width)
@@ -36,8 +37,9 @@ function Header(props) {
         }
       },[width,show])
       useEffect(()=>{
+        setLocalRemove(removeValue)
         // console.log(Al)
-        if((Al==true)){
+        if((Al==true && localRemove==null)){
           if(!document.body.classList.contains("over")){
           document.body.classList.add("over")
           }

@@ -184,12 +184,13 @@ function ChangePin(ele){
 useEffect(()=>{
   if(Allow==true){
     ref.current.checked="true"
-    ref2.current.checked="false"
+    // ref2.current.checked="false"
+    ref2.current.checked=!ref.current.checked
   }
-  else if(Allow==false){
-    ref2.current.checked="true"
-    ref.current.checked="false"
-  }
+  // else if(Allow==false){
+  //   ref2.current.checked="true"
+  //   ref.current.checked="false"
+  // }
 },[Allow])
 useEffect(()=>{
 
@@ -443,11 +444,11 @@ zip? "wrong Format": zip == null ?"":"Field cannot be empty"
 <div className='payment'>Payment Method</div>
 <form action="">
 <div onClick={()=>{setAllow(true)}} >
-  <input  checked={true} ref={ref} type="radio" id="method1" name="payMethod" value="e-money" onChange={()=>{}} />
+  <input   ref={ref} type="radio" id="method1" name="payMethod" value="e-money" onChange={()=>{}} />
   <label htmlFor="method1"> e-Money</label> 
 </div>
 <div onClick={()=>{setAllow(false)}}>
-  <input  checked={false} ref={ref2} type="radio" id="method2" name="payMethod" value="cash-on-delivery" onChange={()=>{}} />
+  <input   ref={ref2} type="radio" id="method2" name="payMethod" value="cash-on-delivery" onChange={()=>{}} />
   <label htmlFor="method2"> Cash on Delivery</label>
 </div>
 </form>

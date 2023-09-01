@@ -4,10 +4,10 @@ import { useState } from 'react'
 import "../POPWindow/PopFull.css"
 import { Link } from 'react-router-dom'
 import Details from '../Details'
-import { ShowPopfull, ZeroCounter } from '../../redux/Slice'
+import { ChangeRemove, ShowPopfull, ZeroCounter } from '../../redux/Slice'
 import { PopShow ,TitleArray} from '../../redux/Slice'
 function PopFull() {
-    let {showPopfull,counter, pricee,ProductInfromation,show} = useSelector(state => state.container)
+  let {showPopfull,counter, pricee,ProductInfromation,show} = useSelector(state => state.container)
   let [number,setNumber]=useState(1)
   let [Allow,setAllow]  =useState(false);
   let dispatch = useDispatch()
@@ -17,6 +17,8 @@ dispatch(ZeroCounter(0));
 dispatch(PopShow(true))//cart  empty is active
 dispatch(ShowPopfull(false)) // clear cart (remove product details) 
 dispatch(TitleArray("cart is empty"));
+document.body.classList.remove("over")
+dispatch(ChangeRemove(null))
 }
 let Active2 = ()=>{
   dispatch(ShowPopfull(false));
@@ -30,13 +32,12 @@ let Active3= ()=>{
         </div>
       <div className={showPopfull? "PopFull" : "hidden"}>
           <div className='head'>
-  <h3>CART ({counter})</h3>
+         <h3>CART ({counter})</h3>
           <div className='removeAll'>
       <a href='#' onClick={Remove}>Remove All
       </a>
           </div>
           </div>
-
         <div className='body_of_popFull'>
   {
   ProductInfromation.map((ele) =>
@@ -51,8 +52,6 @@ let Active3= ()=>{
         </div>
       </div>
 </>
-
   )
 }
-
 export default PopFull
